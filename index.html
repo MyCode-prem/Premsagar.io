@@ -3,74 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of [Your Name], Master's Student in [Your Field]">
-    <title>[Your Name]'s Portfolio</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Student Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <!-- Navbar -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- Home Section -->
-    <section id="home" class="home-section">
-        <div class="intro">
-            <h1>Hi, I'm [Your Name]</h1>
-            <p>Master's student in [Your Field]. I specialize in [Your Specialization].</p>
-            <a href="#projects" class="btn">View My Work</a>
+    <!-- Header Section -->
+    <header class="hero-section">
+        <div class="container">
+            <div class="hero-text">
+                <h1>Hi, I'm <span class="highlight">[Your Name]</span></h1>
+                <p>Aspiring Data Scientist & Full-Stack Developer</p>
+                <a href="#projects" class="btn">Explore My Work</a>
+            </div>
         </div>
-    </section>
+    </header>
 
     <!-- About Me Section -->
     <section id="about" class="about-section">
-        <h2>About Me</h2>
-        <p>I'm currently pursuing a Master's degree in [Your Field] at [Your University]. I have a passion for [mention specific skills or topics like Data Science, Machine Learning, etc.]. My goal is to [describe your career aspirations].</p>
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                I'm a passionate student pursuing [Your Degree] with a focus on [Your Major]. I have experience in web development, machine learning, and data analysis. I love building innovative solutions that solve real-world problems.
+            </p>
+            <a href="resume.pdf" class="btn">Download Resume</a>
+        </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="projects-section">
-        <h2>Projects</h2>
-
-        <!-- Project 1 -->
-        <div class="project">
-            <h3>Liver Cancer Prediction Using U-Net</h3>
-            <p>Developed a deep learning model to detect liver tumors from medical images using U-Net and TransUNet.</p>
-            <p><strong>Technologies:</strong> Python, TensorFlow, LITS Dataset</p>
-            <a href="https://github.com/yourusername/liver-cancer-prediction" target="_blank">View Code on GitHub</a>
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Project 1</h3>
+                    <p>A brief description of your first project.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Project 2</h3>
+                    <p>A brief description of your second project.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Project 3</h3>
+                    <p>A brief description of your third project.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
         </div>
-
-        <!-- Project 2 -->
-        <div class="project">
-            <h3>Stock Impact Prediction Using BERT</h3>
-            <p>Built an NLP model to predict stock price movements based on news headlines using BERT.</p>
-            <p><strong>Technologies:</strong> Python, BERT, Financial Phrasebank</p>
-            <a href="https://github.com/yourusername/stock-impact-prediction" target="_blank">View Code on GitHub</a>
-        </div>
-
     </section>
 
-    <!-- Resume Section -->
-    <section id="resume" class="resume-section">
-        <h2>Resume</h2>
-        <a href="resume.pdf" class="btn">Download Resume</a>
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">Python</div>
+                <div class="skill">React</div>
+                <div class="skill">Machine Learning</div>
+            </div>
+        </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
-        <h2>Contact</h2>
-        <p>Feel free to reach out to me at <strong>[your.email@example.com]</strong> or connect with me on <a href="https://www.linkedin.com/in/yourusername/" target="_blank">LinkedIn</a>.</p>
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form class="contact-form" action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
     </section>
 
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 [Your Name] | All Rights Reserved</p>
+        </div>
     </footer>
+
 </body>
 </html>
